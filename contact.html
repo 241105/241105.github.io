@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Kikuo Hub - contact us!</title>
+</head>
+
+<body>
+  <form action="" method="POST">
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="name">Name: </label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email: </label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="phone">Phone: </label><br>
+      <input list="tel" id="phone" name="phone">
+      <datalist id="tel">
+        <option value="+60">
+        <option value="+61">
+        <option value="+65">
+      </datalist><br>
+      <label for="website">Website: </label><br>
+      <input list="websites" id="browsers" name="websites">
+      <datalist id="websites">
+        <option value="https://">
+        <option value="http://">
+      </datalist><br>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
