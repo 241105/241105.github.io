@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <form action="" method="POST">
+  <form>
     <fieldset>
       <legend>Personal Details</legend>
       <label for="name">Name: </label><br>
@@ -26,7 +26,29 @@
         <option value="https://">
         <option value="http://">
       </datalist><br>
-      <button type="submit">Submit</button>
+      </fieldset><br>
+    
+    <fieldset>
+      <legend>Enquiry Information</legend>
+      <label for="enquiry-type">Enquiry Type: </label><br>
+      <select id="enquiry-type" name="enquiry-type" required>
+        <option value="">Select an enquiry type</option>
+        <option value="general">General Information</option>
+        <option value="collaboration">Collaboration Request</option>
+        <option value="content">Content Suggestion</option>
+        <option value="technical">Technical Support</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select><br><br>
+      
+      <label for="enquiry-title">Subject/Title: </label><br>
+      <input type="text" id="enquiry-title" name="enquiry-title" placeholder="Brief title of your enquiry" required><br><br>
+      
+      <label for="enquiry-description">Description: </label><br>
+      <textarea id="enquiry-description" name="enquiry-description" rows="6" cols="50" placeholder="Please provide details about your enquiry..." required></textarea><br>
     </fieldset>
+    
+    <br>
+    <button type="submit">Send Enquiry</button>
   </form>
 </body>
